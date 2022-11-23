@@ -11,6 +11,8 @@
 		F92A4DD8292D6082001617AE /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92A4DD7292D6082001617AE /* DataStore.swift */; };
 		F92A4DDA292D638D001617AE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92A4DD9292D638D001617AE /* Person.swift */; };
 		F92A4DDD292D6E7F001617AE /* PersoneDetalisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92A4DDC292D6E7F001617AE /* PersoneDetalisViewController.swift */; };
+		F971196E292EA22400D94671 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971196D292EA22400D94671 /* ContactsTableViewController.swift */; };
+		F9711970292EA3F000D94671 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971196F292EA3F000D94671 /* TabBarController.swift */; };
 		F9E48348292D4F3E00994CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E48347292D4F3E00994CC5 /* AppDelegate.swift */; };
 		F9E4834A292D4F3E00994CC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E48349292D4F3E00994CC5 /* SceneDelegate.swift */; };
 		F9E4834F292D4F3E00994CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E4834D292D4F3E00994CC5 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		F92A4DD7292D6082001617AE /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		F92A4DD9292D638D001617AE /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		F92A4DDC292D6E7F001617AE /* PersoneDetalisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoneDetalisViewController.swift; sourceTree = "<group>"; };
+		F971196D292EA22400D94671 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		F971196F292EA3F000D94671 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F9E48344292D4F3E00994CC5 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E48347292D4F3E00994CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E48349292D4F3E00994CC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				F9E48349292D4F3E00994CC5 /* SceneDelegate.swift */,
 				F92A4DDC292D6E7F001617AE /* PersoneDetalisViewController.swift */,
 				F92A4DD4292D5D8F001617AE /* PersonsListViewController.swift */,
+				F971196F292EA3F000D94671 /* TabBarController.swift */,
+				F971196D292EA22400D94671 /* ContactsTableViewController.swift */,
 				F9E48350292D4F3F00994CC5 /* Assets.xcassets */,
 				F9E4834D292D4F3E00994CC5 /* Main.storyboard */,
 				F9E48352292D4F3F00994CC5 /* LaunchScreen.storyboard */,
@@ -164,11 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92A4DDD292D6E7F001617AE /* PersoneDetalisViewController.swift in Sources */,
+				F9711970292EA3F000D94671 /* TabBarController.swift in Sources */,
 				F9E48348292D4F3E00994CC5 /* AppDelegate.swift in Sources */,
 				F92A4DD8292D6082001617AE /* DataStore.swift in Sources */,
 				F9E4834A292D4F3E00994CC5 /* SceneDelegate.swift in Sources */,
 				F92A4DD5292D5D8F001617AE /* PersonsListViewController.swift in Sources */,
 				F92A4DDA292D638D001617AE /* Person.swift in Sources */,
+				F971196E292EA22400D94671 /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

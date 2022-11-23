@@ -48,23 +48,32 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sul-qY-acq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="775"/>
+            <point key="canvasLocation" x="358" y="772"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="kmT-RD-ybo">
             <objects>
-                <tableViewController id="NNq-5B-vhL" sceneMemberID="viewController">
+                <tableViewController id="NNq-5B-vhL" customClass="ContactsTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qIP-ln-Tg8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5bg-qp-A8o">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="qrg-qh-JVi" style="IBUITableViewCellStyleDefault" id="5bg-qp-A8o">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5bg-qp-A8o" id="znT-dC-ZVi">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qrg-qh-JVi">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -73,11 +82,11 @@
                             <outlet property="delegate" destination="NNq-5B-vhL" id="T8Z-L3-aDs"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle.dashed" catalog="system" id="zJD-v0-gco"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="phone.circle" catalog="system" id="zJD-v0-gco"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMf-5C-3tQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="774"/>
+            <point key="canvasLocation" x="1091" y="771"/>
         </scene>
         <!--Persone Detalis View Controller-->
         <scene sceneID="hMS-ye-ln0">
@@ -121,14 +130,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJY-ag-MSG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="1524"/>
+            <point key="canvasLocation" x="356" y="1537"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qkh-QH-JoF">
             <objects>
                 <navigationController id="KTh-da-d2M" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bhD-Uz-lrq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -139,12 +148,12 @@
             </objects>
             <point key="canvasLocation" x="-21" y="-31"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Persons List-->
         <scene sceneID="sbo-LJ-rgC">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4A8-Dw-DJl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="mWi-tZ-pce"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="mWi-tZ-pce"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0TM-hq-A25">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -162,7 +171,7 @@
     </scenes>
     <resources>
         <image name="person.circle" catalog="system" width="128" height="123"/>
-        <image name="person.crop.circle.dashed" catalog="system" width="128" height="123"/>
+        <image name="phone.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,18 +10,13 @@ import UIKit
 class PersonsListViewController: UITableViewController {
     
     private let personsList = Person.getPersonList()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
+//    var personsList: [Person] = []
+    
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personsList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
         let person = personsList[indexPath.row]
@@ -31,11 +26,6 @@ class PersonsListViewController: UITableViewController {
         return cell
     }
     
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        personsList[selection].fullName
-//    }
-
-
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
